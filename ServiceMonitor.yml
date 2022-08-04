@@ -1,0 +1,24 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  annotations:
+    meta.helm.sh/release-name: prometheus-operator-1595779515-custom-sm
+    meta.helm.sh/release-namespace: tekton-pipelines
+  generation: 1
+  labels:
+    app: prometheus-operator-tekton-pipeline-controller
+    app.kubernetes.io/managed-by: Helm
+    chart: prometheus-operator-8.15.6
+    heritage: Helm
+    release: prometheus-operator-1595779515
+  name: prometheus-operator-159577-tekton-pipeline-controller
+  namespace: tekton-pipelines
+spec:
+  selector:
+    matchLabels:
+      app.kubernetes.io/instance: tekton-pipeline-1593528871
+      app.kubernetes.io/component: controller
+  endpoints:
+  - port: metrics
+    path: /metrics
+    interval: 15s
