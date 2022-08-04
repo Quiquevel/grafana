@@ -9,7 +9,7 @@ helm repo add grafana https://grafana.github.io/helm-charts
 
 A continuación instalamos Grafana utilizando los charts disponibles:
 
-helm install grafana stable/grafana
+[n]helm install grafana stable/grafana[\n]
 kubectl expose service grafana --type=NodePort --target-port=3000 --name=grafana-np
 
 Nuevamente, considerando que estamos utilizando Minikube, para poder acceder de forma sencilla a la interfaz web de Grafana, exponemos el servicio como un NodePort.
