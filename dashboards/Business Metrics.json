@@ -1,0 +1,897 @@
+{
+    "annotations": {
+      "enable": false,
+      "list": [
+        {
+          "builtIn": 1,
+          "datasource": {
+            "type": "grafana",
+            "uid": "-- Grafana --"
+          },
+          "enable": true,
+          "hide": true,
+          "iconColor": "rgba(0, 211, 255, 1)",
+          "name": "Annotations & Alerts",
+          "target": {
+            "limit": 100,
+            "matchAny": false,
+            "tags": [],
+            "type": "dashboard"
+          },
+          "type": "dashboard"
+        }
+      ]
+    },
+    "editable": true,
+    "fiscalYearStartMonth": 0,
+    "graphTooltip": 1,
+    "id": 110,
+    "links": [],
+    "liveNow": false,
+    "panels": [
+      {
+        "datasource": {
+          "type": "graphite",
+          "uid": "000000001"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "thresholds"
+            },
+            "mappings": [
+              {
+                "options": {
+                  "match": "null",
+                  "result": {
+                    "text": "N/A"
+                  }
+                },
+                "type": "special"
+              }
+            ],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "rgba(245, 54, 54, 0.9)",
+                  "value": null
+                },
+                {
+                  "color": "rgba(237, 129, 40, 0.89)",
+                  "value": 100
+                },
+                {
+                  "color": "rgba(50, 172, 45, 0.97)",
+                  "value": 270
+                }
+              ]
+            },
+            "unit": "none"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 6,
+          "w": 6,
+          "x": 0,
+          "y": 0
+        },
+        "id": 16,
+        "links": [],
+        "maxDataPoints": 100,
+        "options": {
+          "colorMode": "value",
+          "graphMode": "area",
+          "justifyMode": "auto",
+          "orientation": "horizontal",
+          "reduceOptions": {
+            "calcs": [
+              "mean"
+            ],
+            "fields": "",
+            "values": false
+          },
+          "textMode": "auto"
+        },
+        "pluginVersion": "9.0.6",
+        "targets": [
+          {
+            "datasource": {
+              "type": "graphite",
+              "uid": "000000001"
+            },
+            "refId": "A",
+            "target": "apps.backend.backend_02.counters.requests.count"
+          }
+        ],
+        "title": "Sign ups",
+        "type": "stat"
+      },
+      {
+        "datasource": {
+          "type": "graphite",
+          "uid": "000000001"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "thresholds"
+            },
+            "mappings": [
+              {
+                "options": {
+                  "match": "null",
+                  "result": {
+                    "text": "N/A"
+                  }
+                },
+                "type": "special"
+              }
+            ],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "rgba(245, 54, 54, 0.9)",
+                  "value": null
+                },
+                {
+                  "color": "rgba(237, 129, 40, 0.89)",
+                  "value": 100
+                },
+                {
+                  "color": "rgba(50, 172, 45, 0.97)",
+                  "value": 270
+                }
+              ]
+            },
+            "unit": "none"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 6,
+          "w": 6,
+          "x": 6,
+          "y": 0
+        },
+        "id": 15,
+        "links": [],
+        "maxDataPoints": 100,
+        "options": {
+          "colorMode": "value",
+          "graphMode": "area",
+          "justifyMode": "auto",
+          "orientation": "horizontal",
+          "reduceOptions": {
+            "calcs": [
+              "mean"
+            ],
+            "fields": "",
+            "values": false
+          },
+          "textMode": "auto"
+        },
+        "pluginVersion": "9.0.6",
+        "targets": [
+          {
+            "datasource": {
+              "type": "graphite",
+              "uid": "000000001"
+            },
+            "refId": "A",
+            "target": "scale(apps.backend.backend_01.counters.requests.count, 0.7)"
+          }
+        ],
+        "title": "Logins",
+        "type": "stat"
+      },
+      {
+        "datasource": {
+          "type": "graphite",
+          "uid": "000000001"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "thresholds"
+            },
+            "mappings": [
+              {
+                "options": {
+                  "match": "null",
+                  "result": {
+                    "text": "N/A"
+                  }
+                },
+                "type": "special"
+              }
+            ],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "rgba(245, 54, 54, 0.9)",
+                  "value": null
+                },
+                {
+                  "color": "rgba(237, 129, 40, 0.89)",
+                  "value": 100
+                },
+                {
+                  "color": "rgba(50, 172, 45, 0.97)",
+                  "value": 270
+                }
+              ]
+            },
+            "unit": "none"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 6,
+          "w": 6,
+          "x": 12,
+          "y": 0
+        },
+        "id": 17,
+        "links": [],
+        "maxDataPoints": 100,
+        "options": {
+          "colorMode": "value",
+          "graphMode": "area",
+          "justifyMode": "auto",
+          "orientation": "horizontal",
+          "reduceOptions": {
+            "calcs": [
+              "mean"
+            ],
+            "fields": "",
+            "values": false
+          },
+          "textMode": "auto"
+        },
+        "pluginVersion": "9.0.6",
+        "targets": [
+          {
+            "datasource": {
+              "type": "graphite",
+              "uid": "000000001"
+            },
+            "refId": "A",
+            "target": "apps.backend.backend_04.counters.requests.count"
+          }
+        ],
+        "title": "Sign outs",
+        "type": "stat"
+      },
+      {
+        "datasource": {
+          "type": "graphite",
+          "uid": "000000001"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "thresholds"
+            },
+            "mappings": [
+              {
+                "options": {
+                  "match": "null",
+                  "result": {
+                    "text": "N/A"
+                  }
+                },
+                "type": "special"
+              }
+            ],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "rgba(245, 54, 54, 0.9)",
+                  "value": null
+                },
+                {
+                  "color": "rgba(237, 129, 40, 0.89)",
+                  "value": 100
+                },
+                {
+                  "color": "rgba(50, 172, 45, 0.97)",
+                  "value": 270
+                }
+              ]
+            },
+            "unit": "none"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 6,
+          "w": 6,
+          "x": 18,
+          "y": 0
+        },
+        "id": 18,
+        "links": [],
+        "maxDataPoints": 100,
+        "options": {
+          "colorMode": "value",
+          "graphMode": "area",
+          "justifyMode": "auto",
+          "orientation": "horizontal",
+          "reduceOptions": {
+            "calcs": [
+              "mean"
+            ],
+            "fields": "",
+            "values": false
+          },
+          "textMode": "auto"
+        },
+        "pluginVersion": "9.0.6",
+        "targets": [
+          {
+            "datasource": {
+              "type": "graphite",
+              "uid": "000000001"
+            },
+            "refId": "A",
+            "target": "scale(apps.backend.backend_03.counters.requests.count, 0.3)"
+          }
+        ],
+        "title": "Support calls",
+        "type": "stat"
+      },
+      {
+        "alert": {
+          "conditions": [
+            {
+              "evaluator": {
+                "params": [
+                  5
+                ],
+                "type": "lt"
+              },
+              "operator": {
+                "type": "and"
+              },
+              "query": {
+                "datasourceId": 1,
+                "model": {
+                  "refId": "B",
+                  "target": "alias(removeAboveValue(scale(statsd.fakesite.counters.session_start.desktop.count, 5), 75), 'Payments')"
+                },
+                "params": [
+                  "B",
+                  "5m",
+                  "now"
+                ]
+              },
+              "reducer": {
+                "params": [],
+                "type": "avg"
+              },
+              "type": "query"
+            }
+          ],
+          "executionErrorState": "alerting",
+          "frequency": "60s",
+          "handler": 1,
+          "name": "Payments Completed/s alert",
+          "noDataState": "no_data",
+          "notifications": []
+        },
+        "aliasColors": {
+          "Payments": "#EF843C",
+          "cpu": "#E24D42",
+          "memory": "#6ED0E0",
+          "statsd.fakesite.counters.session_start.desktop.count": "#6ED0E0"
+        },
+        "annotate": {
+          "enable": false
+        },
+        "bars": false,
+        "dashLength": 10,
+        "dashes": false,
+        "datasource": {
+          "type": "graphite",
+          "uid": "000000001"
+        },
+        "editable": true,
+        "fill": 3,
+        "fillGradient": 0,
+        "grid": {
+          "min": 0
+        },
+        "gridPos": {
+          "h": 11,
+          "w": 8,
+          "x": 0,
+          "y": 6
+        },
+        "hiddenSeries": false,
+        "id": 4,
+        "interactive": true,
+        "legend": {
+          "avg": false,
+          "current": true,
+          "max": false,
+          "min": true,
+          "show": false,
+          "total": false,
+          "values": false
+        },
+        "legend_counts": true,
+        "lines": true,
+        "linewidth": 2,
+        "links": [],
+        "nullPointMode": "connected",
+        "options": {
+          "alertThreshold": true
+        },
+        "percentage": false,
+        "pluginVersion": "9.0.6",
+        "pointradius": 5,
+        "points": false,
+        "renderer": "flot",
+        "resolution": 100,
+        "scale": 1,
+        "seriesOverrides": [
+          {
+            "alias": "cpu",
+            "fill": 0,
+            "lines": true,
+            "yaxis": 2,
+            "zindex": 2
+          },
+          {
+            "alias": "memory",
+            "pointradius": 2,
+            "points": true
+          }
+        ],
+        "spaceLength": 10,
+        "spyable": true,
+        "stack": false,
+        "steppedLine": false,
+        "targets": [
+          {
+            "datasource": {
+              "type": "graphite",
+              "uid": "000000001"
+            },
+            "refId": "B",
+            "target": "alias(removeAboveValue(scale(statsd.fakesite.counters.session_start.desktop.count, 5), 75), 'Payments')"
+          }
+        ],
+        "thresholds": [
+          {
+            "colorMode": "critical",
+            "fill": true,
+            "line": true,
+            "op": "lt",
+            "value": 5
+          }
+        ],
+        "timeRegions": [],
+        "timezone": "browser",
+        "title": "Payments Completed/s",
+        "tooltip": {
+          "msResolution": false,
+          "query_as_alias": true,
+          "shared": false,
+          "sort": 0,
+          "value_type": "cumulative"
+        },
+        "type": "graph",
+        "xaxis": {
+          "mode": "time",
+          "show": true,
+          "values": []
+        },
+        "yaxes": [
+          {
+            "format": "none",
+            "logBase": 1,
+            "show": true
+          },
+          {
+            "format": "percent",
+            "logBase": 1,
+            "min": 0,
+            "show": true
+          }
+        ],
+        "yaxis": {
+          "align": false
+        },
+        "zerofill": true
+      },
+      {
+        "alert": {
+          "conditions": [
+            {
+              "evaluator": {
+                "params": [
+                  55
+                ],
+                "type": "gt"
+              },
+              "operator": {
+                "type": "and"
+              },
+              "query": {
+                "datasourceId": 1,
+                "model": {
+                  "refId": "B",
+                  "target": "alias(statsd.fakesite.counters.session_start.mobile.count, 'reviews')"
+                },
+                "params": [
+                  "B",
+                  "5m",
+                  "now"
+                ]
+              },
+              "reducer": {
+                "params": [],
+                "type": "avg"
+              },
+              "type": "query"
+            }
+          ],
+          "executionErrorState": "alerting",
+          "frequency": "60s",
+          "handler": 1,
+          "name": "Customer Reviews alert",
+          "noDataState": "no_data",
+          "notifications": []
+        },
+        "aliasColors": {
+          "Payments": "#BA43A9",
+          "cpu": "#E24D42",
+          "memory": "#6ED0E0",
+          "reviews": "#7EB26D",
+          "statsd.fakesite.counters.session_start.desktop.count": "#6ED0E0"
+        },
+        "annotate": {
+          "enable": false
+        },
+        "bars": false,
+        "dashLength": 10,
+        "dashes": false,
+        "datasource": {
+          "type": "graphite",
+          "uid": "000000001"
+        },
+        "editable": true,
+        "fill": 3,
+        "fillGradient": 0,
+        "grid": {
+          "min": 0
+        },
+        "gridPos": {
+          "h": 11,
+          "w": 8,
+          "x": 8,
+          "y": 6
+        },
+        "hiddenSeries": false,
+        "id": 19,
+        "interactive": true,
+        "legend": {
+          "avg": false,
+          "current": false,
+          "max": false,
+          "min": true,
+          "show": true,
+          "total": false,
+          "values": true
+        },
+        "legend_counts": true,
+        "lines": true,
+        "linewidth": 2,
+        "links": [],
+        "nullPointMode": "connected",
+        "options": {
+          "alertThreshold": true
+        },
+        "percentage": false,
+        "pluginVersion": "9.0.6",
+        "pointradius": 5,
+        "points": false,
+        "renderer": "flot",
+        "resolution": 100,
+        "scale": 1,
+        "seriesOverrides": [
+          {
+            "alias": "cpu",
+            "fill": 0,
+            "lines": true,
+            "yaxis": 2,
+            "zindex": 2
+          },
+          {
+            "alias": "memory",
+            "pointradius": 2,
+            "points": true
+          }
+        ],
+        "spaceLength": 10,
+        "spyable": true,
+        "stack": false,
+        "steppedLine": false,
+        "targets": [
+          {
+            "datasource": {
+              "type": "graphite",
+              "uid": "000000001"
+            },
+            "refId": "B",
+            "target": "alias(statsd.fakesite.counters.session_start.mobile.count, 'reviews')"
+          }
+        ],
+        "thresholds": [
+          {
+            "colorMode": "critical",
+            "fill": true,
+            "line": true,
+            "op": "gt",
+            "value": 55
+          }
+        ],
+        "timeRegions": [],
+        "timezone": "browser",
+        "title": "Customer Reviews",
+        "tooltip": {
+          "msResolution": false,
+          "query_as_alias": true,
+          "shared": false,
+          "sort": 0,
+          "value_type": "cumulative"
+        },
+        "type": "graph",
+        "xaxis": {
+          "mode": "time",
+          "show": true,
+          "values": []
+        },
+        "yaxes": [
+          {
+            "format": "none",
+            "logBase": 1,
+            "show": true
+          },
+          {
+            "format": "percent",
+            "logBase": 1,
+            "min": 0,
+            "show": true
+          }
+        ],
+        "yaxis": {
+          "align": false
+        },
+        "zerofill": true
+      },
+      {
+        "alert": {
+          "conditions": [
+            {
+              "evaluator": {
+                "params": [
+                  27
+                ],
+                "type": "gt"
+              },
+              "operator": {
+                "type": "and"
+              },
+              "query": {
+                "datasourceId": 1,
+                "model": {
+                  "refId": "B",
+                  "target": "alias(statsd.fakesite.counters.session_start.desktop.count, 'subscribers')"
+                },
+                "params": [
+                  "B",
+                  "5m",
+                  "now"
+                ]
+              },
+              "reducer": {
+                "params": [],
+                "type": "avg"
+              },
+              "type": "query"
+            }
+          ],
+          "executionErrorState": "alerting",
+          "frequency": "60s",
+          "handler": 1,
+          "name": "Payments Completed/s alert",
+          "noDataState": "no_data",
+          "notifications": []
+        },
+        "aliasColors": {
+          "cpu": "#E24D42",
+          "memory": "#6ED0E0",
+          "statsd.fakesite.counters.session_start.desktop.count": "#6ED0E0",
+          "subscribers": "#82B5D8"
+        },
+        "annotate": {
+          "enable": false
+        },
+        "bars": false,
+        "dashLength": 10,
+        "dashes": false,
+        "datasource": {
+          "type": "graphite",
+          "uid": "000000001"
+        },
+        "editable": true,
+        "fill": 3,
+        "fillGradient": 0,
+        "grid": {
+          "min": 0
+        },
+        "gridPos": {
+          "h": 11,
+          "w": 8,
+          "x": 16,
+          "y": 6
+        },
+        "hiddenSeries": false,
+        "id": 20,
+        "interactive": true,
+        "legend": {
+          "avg": false,
+          "current": true,
+          "max": false,
+          "min": true,
+          "show": true,
+          "total": false,
+          "values": false
+        },
+        "legend_counts": true,
+        "lines": true,
+        "linewidth": 2,
+        "links": [],
+        "nullPointMode": "connected",
+        "options": {
+          "alertThreshold": true
+        },
+        "percentage": false,
+        "pluginVersion": "9.0.6",
+        "pointradius": 5,
+        "points": false,
+        "renderer": "flot",
+        "resolution": 100,
+        "scale": 1,
+        "seriesOverrides": [
+          {
+            "alias": "cpu",
+            "fill": 0,
+            "lines": true,
+            "yaxis": 2,
+            "zindex": 2
+          },
+          {
+            "alias": "memory",
+            "pointradius": 2,
+            "points": true
+          }
+        ],
+        "spaceLength": 10,
+        "spyable": true,
+        "stack": false,
+        "steppedLine": false,
+        "targets": [
+          {
+            "datasource": {
+              "type": "graphite",
+              "uid": "000000001"
+            },
+            "refId": "B",
+            "target": "alias(statsd.fakesite.counters.session_start.desktop.count, 'subscribers')"
+          }
+        ],
+        "thresholds": [
+          {
+            "colorMode": "critical",
+            "fill": true,
+            "line": true,
+            "op": "gt",
+            "value": 27
+          }
+        ],
+        "timeRegions": [],
+        "timezone": "browser",
+        "title": "Payments Completed/s",
+        "tooltip": {
+          "msResolution": false,
+          "query_as_alias": true,
+          "shared": false,
+          "sort": 0,
+          "value_type": "cumulative"
+        },
+        "type": "graph",
+        "xaxis": {
+          "mode": "time",
+          "show": true,
+          "values": []
+        },
+        "yaxes": [
+          {
+            "format": "none",
+            "logBase": 1,
+            "show": true
+          },
+          {
+            "format": "percent",
+            "logBase": 1,
+            "min": 0,
+            "show": true
+          }
+        ],
+        "yaxis": {
+          "align": false
+        },
+        "zerofill": true
+      }
+    ],
+    "refresh": false,
+    "schemaVersion": 36,
+    "style": "dark",
+    "tags": [
+      "startpage",
+      "home",
+      "presentation"
+    ],
+    "templating": {
+      "list": []
+    },
+    "time": {
+      "from": "now-24h",
+      "to": "now"
+    },
+    "timepicker": {
+      "collapse": false,
+      "enable": true,
+      "notice": false,
+      "now": true,
+      "refresh_intervals": [
+        "5s",
+        "10s",
+        "30s",
+        "1m",
+        "5m",
+        "15m",
+        "30m",
+        "1h",
+        "2h",
+        "1d"
+      ],
+      "status": "Stable",
+      "time_options": [
+        "5m",
+        "15m",
+        "1h",
+        "2h",
+        " 6h",
+        "12h",
+        "24h",
+        "2d",
+        "7d",
+        "30d"
+      ],
+      "type": "timepicker"
+    },
+    "timezone": "browser",
+    "title": "Business Metrics",
+    "uid": "000000110",
+    "version": 5,
+    "weekStart": ""
+  }
